@@ -1,0 +1,41 @@
+#! / Bin / bash
+
+leia -p " Qual o Nome do Usuário um redefinir: " namer
+ Se cat / etc / passwd | grep $ namer : > / dev / null
+ então
+ echo  "  "
+ outro
+ Claro
+ echo  " Usuario $ namer Existe NÃO "
+ Saída
+ Fi
+Claro
+echo -e " \ 033 [1; 26mO redefinir deseja que vc?
+1) Numero de logins
+2) Dados de expiração
+3) Mudar Senha do Usuário "
+leia -p " Opção: " opção
+se [ $ opção  -eq 1] ;  então
+leia -p " Qual o Novo límite de logins: " liml
+rm / etc / usuarios / $ namer .sh
+rm / etc / tempo / $ namer .sh
+limite $ namer  $ liml
+exit 0
+Fi
+
+se [ $ opção  -eq 2] ;  então
+echo  " Qual a nova data: AAAA formato / MM / DD "
+leia -p " : " data
+-E chage $ date  $ namer  2> / dev / null
+echo -e " \ 033 [1; 31mUsuario $ namer Data: $ date \ 033 [0m "
+Saída
+Fi
+se [ $ opção  -eq 3]
+então
+leia -p " Qual a nova Senha Pará $ namer : " Senha
+(echo " $ Senha "  ;  echo  " $ Senha " ) | passwd $ namer  > / dev / null 2> / dev / null
+echo  " $ Senha "  > / etc / VpsPackdir / Senha / $ namer
+echo  " Nova Aplicada Senha "
+Saída
+Fi
+echo -e " ESSA OPÇÃO NÃO Existe \ 033 [0m "
