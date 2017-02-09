@@ -23,7 +23,7 @@ echo -e "\033[1;31mPara a instalação ser correta é preciso o ip.
 Digite o ip !\033[0m"
 read -p ": " ip
 clear
-echo -e "\033[1;31m-----> \033[01;37mScript Feito por Luiz Henrique (Unix SSH)\033[0m"
+echo -e "\033[1;31m-----> \033[01;37mScript Feito por Rogerinhoj5M (Insoia)\033[0m"
 echo -e "\033[1;31m-----> \033[01;37mSeu sistema operacional:\033[1;31m $(cat /etc/so)"
 echo -e "\033[1;31m-----> \033[01;37mSeu ip:\033[1;31m $ip"
 echo -e "\033[1;31m-----> \033[1;37mSQUID NAS PORTAS:\033[1;31m 80, 8080, 8799, 3128\033[0m"
@@ -81,7 +81,8 @@ forms.claro.com.br
 golpf.claro.com.br
 logtiscap.claro.com.br
 www.recargafacil.claro.com.br
-.vivo.com.br
+apps.claro.com.co
+vivo.com.br
 .bradescocelular.com.br" > /etc/payloads
 }
 
@@ -99,7 +100,7 @@ echo "http_port 80
 http_port 8080
 http_port 8799
 http_port 3128
-visible_hostname VpsPack
+visible_hostname VpsPack2
 acl ip dstdomain $ip
 http_access allow ip" > /etc/squid/squid.conf
 echo 'acl accept dstdomain -i "/etc/payloads"
@@ -135,7 +136,7 @@ echo "http_port 80
 http_port 8080
 http_port 8799
 http_port 3128
-visible_hostname VpsPack
+visible_hostname VpsPack2
 acl ip dstdomain $ip
 http_access allow ip" > /etc/squid3/squid.conf
 echo 'acl accept dstdomain -i "/etc/payloads"
@@ -169,7 +170,7 @@ echo "http_port 80
 http_port 8080
 http_port 8799
 http_port 3128
-visible_hostname VpsPack
+visible_hostname VpsPack2
 acl ip dstdomain $ip
 http_access allow ip" > /etc/squid/squid.conf
 echo 'acl accept dstdomain -i "/etc/payloads"
@@ -203,7 +204,7 @@ echo "http_port 80
 http_port 8080
 http_port 8799
 http_port 3128
-visible_hostname VpsPack
+visible_hostname VpsPack2
 acl ip dstdomain $ip
 http_access allow ip" > /etc/squid3/squid.conf
 echo 'acl accept dstdomain -i "/etc/payloads"
@@ -239,7 +240,7 @@ echo "http_port 80
 http_port 8080
 http_port 8799
 http_port 3128
-visible_hostname VpsPack
+visible_hostname VpsPack2
 acl ip dstdomain $ip
 http_access allow ip" > /etc/squid/squid.conf
 echo 'acl accept dstdomain -i "/etc/payloads"
@@ -275,7 +276,7 @@ echo "http_port 80
 http_port 8080
 http_port 8799
 http_port 3128
-visible_hostname VpsPack
+visible_hostname VpsPack2
 acl ip dstdomain $ip
 http_access allow ip" > /etc/squid*/squid.conf
 echo 'acl accept dstdomain -i "/etc/payloads"
