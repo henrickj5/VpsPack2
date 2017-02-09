@@ -4,35 +4,35 @@ echo -e "\033[40;1;37m VpsPack2 Detalhes \033[0m
 Vc pode virar root com \033[1;31msu \033[1;33mou \033[1;31msudo su"
 
 echo -e "\033[1;32m
-Ferramenta Limit:\033[1;36m
+Ferramenta limit:\033[1;36m
 Essa ferramenta monitora o numero de conexoes de usuarios que teve seu limite aplicado
 Use essa ferramenta pelo VpsPack2 (recomendado)
 Tbm pode a usar com apenas um comando \033[1;33mlimit usuario limite\033[0m
 \033[1;36mAo exceder o limite as conexoes excedentes serao desconectados !!
  
-\033[1;32mUserCreate:
+\033[1;32mcriarusuario:
 \033[1;36mObjetivo criar usuarios de forma rapida e aplicando uma validade em dias
-Para executar comando: Usercreate 
+Para executar comando: criarusuario 
 Ou execute pelo VpsPack2
-\033[1;32mUserBack:
+\033[1;32muserback:
 \033[1;36mObjetivo: Escolher entre deletar usuarios Forçar o deletamento e tambem desconectar todos de um usuario.
-Para executar: UserBack
+Para executar: userback
 Ou execute pelo VpsPack2.
-\033[1;32mUserRedefine:
+\033[1;32mredefinirusuario:
 \033[1;36mFerramenta para redefinir o limite de logins de um usuario ou redefinir a data de expiraçao de um usuario.
-Para executar: UserRedefine
+Para executar: redefinirusuario
 Ou execute pelo VpsPack27
-\033[1;32mInstall-addhosts & add-hosts:
-\033[1;36mA ferramenta Install-addhosts so deve ser usada uma vez ela prepara diretorios para a ferramenta add-hosts
+\033[1;32minstalar-addhost & addhost:
+\033[1;36mA ferramenta instalar-addhost so deve ser usada uma vez ela prepara diretorios para a ferramenta add-hosts
 Ferramenta add-hosts ela adiciona novos dominios (hosts payloads) em qualquer tipo de squid.conf
 Execute pelo VpsPack2
-\033[1;32mFirewall-block & firewall-reset:
+\033[1;32mbloquearfirewall & resertafirewall:
 \033[1;36mFerramenta firewall-block faz o bloqueio torrent e protocolo icmp
 Firewall-reset desfaz todas as regras iptables desabilitando qualquer bloqueio no firewall
 ATENÇAO ESSAS DUAS FERRAMENTAS PODEM CAUSAR PROBLEMAS EXECUTE POR SUA CONTA
 MUITAS EMPRESAS USAM O IPTABLES EM SUAS MAQUINAS VIRTUAIS E ESSE NÃO PODE SER ALTERADO
 Execute pelo VpsPack2
-\033[1;32mMonitoring:
+\033[1;32msshmonitor:
 \033[1;36mImportante ferramenta que le mostra quantas conexoes em cada usuario !!
 OUTROS:
 PARA RETIRAR O LIMITE DE CONEXOES DE UM USUARIO OU DE TODOS APAGUE
