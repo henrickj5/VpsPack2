@@ -102,7 +102,6 @@ case $opcao in
   confvps;;
   18)
   confvps;;
-  
- *)
+  *)
   id > /dev/null 2> /dev/null
 esac
