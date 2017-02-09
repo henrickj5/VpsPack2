@@ -16,7 +16,7 @@ fi
 
 if  senha=$(cat /etc/VpsPack2dir/senha/$users > /dev/null 2> /dev/null)
 then
-senha=$(cat /etc/VpsPackdir/senha/$users)
+senha=$(cat /etc/VpsPack2dir/senha/$users)
 else
 senha="null"
 fi
@@ -31,4 +31,5 @@ detalheslimit=$(printf '%-10s' "$limitecs")
 detalhes=$(printf ' %-21s' "$users")
 detalhespass=$(printf '%-18s' "$senha")
 echo -e "\033[1;33m$detalhes $detalhespass $detalhesdata $detalheslimit\033[0m"
+echo -e "\033[1;30m----------------------------------------------------------------------\033[0m"
 done
