@@ -20,7 +20,7 @@ then
 		echo -e "\033[1;36mSenha: \033[0m$pass"
 		echo -e "\033[1;36mExpira:\033[0m $datexp"
 		echo -e "\033[1;36mLimite de L.S:\033[0m $limite"
-	    echo "$pass" > /etc/VpsPackdir/senha/$name
+	    echo "$pass" > /etc/VpsPack2dir/senha/$name
 	fi
 else
 	if echo $(id) |grep sudo > /dev/null
