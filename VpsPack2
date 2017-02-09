@@ -59,6 +59,7 @@ echo -e "\033[1;37mEscolha uma das opçoẽs:    \033[1;37mPara Sair Ctrl + C\03
 [15] systemdetalhes \033[1;30m(Detalhes sobre o Sistema)\033[1;33m
 [16] detalhes \033[1;30m(Detalhes sobre o VpsPack2)\033[1;33m
 [17] confvps \033[1;30m(Remover o VpsPack)\033[0m"
+[18] confvps \033[1;30m(Remover o VpsPack)\033[0m"
 read -p ": " opcao
 
 case $opcao in
@@ -99,6 +100,9 @@ case $opcao in
   detalhes;;
  17)
   confvps;;
+  18)
+  confvps;;
+  
  *)
   id > /dev/null 2> /dev/null
 esac
