@@ -71,24 +71,24 @@ case $opcao in
  3)
   redefinirusuario;;
  4)
-  userback;;
+  UserBack;;
  5)
   bloquearfirewall;;
  6)
-  restaurarfirewall;;
+  resratfirewall;;
  7)
   instalar-addhost;;
  8)
   addhost;;
  9)
-  monitorar;;
+  sshmonitor;;
  10)
-  backupusers;;
+  beckuperuser;;
  11)
   read -p "Em qual diretorio esta o arquivo de Backup: " arq 
   restaurar-usuarios $arq;;
  12)
-  detalhesusers;;
+  detalhesusuario;;
  13)
   banner;;
  14)
