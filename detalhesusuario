@@ -7,14 +7,14 @@ echo -e "\033[1;30m-------------------------------------------------------------
 for users in `awk -F : '$3 > 900 { print $1 }' /etc/passwd |grep -v "nobody" |grep -vi polkitd |grep -vi system-`
 do
 
-if cat /etc/VpsPackdir/limite/$users > /dev/null 2> /dev/null
+if cat /etc/VpsPack2dir/limite/$users > /dev/null 2> /dev/null
 then
-limitecs=$(cat /etc/VpsPackdir/limite/$users)
+limitecs=$(cat /etc/VpsPack2dir/limite/$users)
 else
 limitecs="null"
 fi
 
-if  senha=$(cat /etc/VpsPackdir/senha/$users > /dev/null 2> /dev/null)
+if  senha=$(cat /etc/VpsPack2dir/senha/$users > /dev/null 2> /dev/null)
 then
 senha=$(cat /etc/VpsPackdir/senha/$users)
 else
