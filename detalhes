@@ -40,4 +40,4 @@ rm /etc/usuarios/usuario.sh
 rm /etc/tempo/usuario.sh
 Ou retire o limite de todos
 rm -r /etc/tempo /etc/usuarios
-\033[40;1;37m  FEITO POR LUIZ HENRIQUE (RICKNETFREE) \033[0m"
+\033[40;1;37m  EDITADO POR ROGERINHOJ5      (ROGERJ5M) \033[0m"
