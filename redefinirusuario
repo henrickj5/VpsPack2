@@ -34,7 +34,7 @@ se [ $ opção  -eq 3]
 então
 leia -p " Qual a nova Senha Pará $ namer : " Senha
 (echo " $ Senha "  ;  echo  " $ Senha " ) | passwd $ namer  > / dev / null 2> / dev / null
-echo  " $ Senha "  > / etc / VpsPackdir / Senha / $ namer
+Echo "$ Senha"> / etc / VpsPack2dir / Senha / $ namer
 echo  " Nova Aplicada Senha "
 Saída
 Fi
