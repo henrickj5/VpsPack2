@@ -84,6 +84,8 @@ www.recargafacil.claro.com.br
 apps.claro.com.co
 .claroseguranca.com.br
 vivo.com.br
+.m.claroseguridad.com
+m.claroseguridad.com
 .bradescocelular.com.br" > /etc/payloads
 }
 
