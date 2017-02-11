@@ -1,5 +1,5 @@
 #!/bin/bash
-payload="/etc/squid3/payload.txt"
+payload="/etc/payloads"
 tput setaf 7 ; tput setab 4 ; tput bold ; printf '%35s%s%-10s\n' "Adicionar Host ao Squid3" ; tput sgr0
 if [ ! -f "$payload" ]
 then
