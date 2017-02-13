@@ -44,5 +44,5 @@ rm /etc/tempo/usuario.sh
 Ou retire o limite de todos
 rm -r /etc/tempo /etc/usuarios
 \033[1;32mconfvps:
-\033[1;36mUse para configurar sua vps executando com o comando /033[1;32mconfvps:
+\033[1;36mUse para configurar sua vps executando com o comando \033[1;32mexpirados:
 \033[40;1;37m  EDITADO POR ROGERINHOJ5      (ROGERJ5M) \033[0m"
