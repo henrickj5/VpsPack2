@@ -1,22 +1,5 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
- @rogerinhoj5
- Sign out
- Watch 0
-  Star 0
-  Fork 1 RicKbrL/VpsConf
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Pulse  Graphs
-Branch: master Find file Copy pathVpsConf/conf
-accee8e  6 days ago
-@RicKbrL RicKbrL Update conf
-1 contributor
-RawBlameHistory    
-296 lines (264 sloc)  8.65 KB
-#/bin/bash
+
+ #/bin/bash
 clear
 if [ $(id -u) -eq 0 ]
 then
@@ -328,6 +311,3 @@ addhost
 echo -e "\033[1;37mPara adicionar novos hosts ao squid execute o comando addhost
 os hosts ficam no arquivo /etc/payloads\033[0m"
 echo -e "\033[01;31mTudo terminado crie um usuario e teste !! \033[0m"
-
-Contact GitHub API Training Shop Blog About
-© 2017 GitHub, Inc. Terms Privacy Security Status Help
