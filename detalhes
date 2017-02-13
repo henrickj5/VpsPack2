@@ -32,6 +32,9 @@ Firewall-reset desfaz todas as regras iptables desabilitando qualquer bloqueio n
 ATENÇAO ESSAS DUAS FERRAMENTAS PODEM CAUSAR PROBLEMAS EXECUTE POR SUA CONTA
 MUITAS EMPRESAS USAM O IPTABLES EM SUAS MAQUINAS VIRTUAIS E ESSE NÃO PODE SER ALTERADO
 Execute pelo VpsPack2
+\033[1;32mexpirados:
+\033[1;36mComando que remove automaticamente todas os usuários que passaram da data de 
+expiração. Execute pelo comando \033[1;36mexpirados:
 \033[1;32msshmonitor:
 \033[1;36mImportante ferramenta que le mostra quantas conexoes em cada usuario !!
 OUTROS:
@@ -40,4 +43,6 @@ rm /etc/usuarios/usuario.sh
 rm /etc/tempo/usuario.sh
 Ou retire o limite de todos
 rm -r /etc/tempo /etc/usuarios
+\033[1;32mconfvps:
+\033[1;32mUse para configurar sua vps 
 \033[40;1;37m  EDITADO POR ROGERINHOJ5      (ROGERJ5M) \033[0m"
