@@ -25,14 +25,14 @@ else
 mkdir /etc/VpsPack2dir
 fi
 
-if [ -d /etc/VpsPack2dir/senha ]
+if [ -d /etc/VpsPackdir/senha ]
 then
 echo ""
 else
 mkdir /etc/VpsPack2dir/senha
 fi
 
-if [ -d /etc/VpsPackdir/limite ]
+if [ -d /etc/VpsPack2dir/limite ]
 then
 echo ""
 else
@@ -40,11 +40,8 @@ mkdir /etc/VpsPack2dir/limite
 fi
 
 clear
-fi
-
-clear
-echo -e " \033[1;37m  VpsPack2  1.2   [Rogerinho]\033[0m"
-echo -e " \033[1;37mEscolha uma das opçoẽs:    \033[1;37mPara Sair Ctrl + C\033[1;33m
+echo -e " \033[1;37m  VpsPack-Pro  1.0   [Nao compre, nem venda esse script]\033[0m"
+echo -e "\033[1;37mEscolha uma das opçoẽs:    \033[1;37mPara Sair Ctrl + C\033[1;33m
 [1] limit \033[1;30m(limite de conexoes simultaneas)\033[1;33m
 [2] criarusuario \033[1;30m(Criar usuarios)\033[1;33m
 [3] redefinirusuario \033[1;30m(Opções para mudanças no usuario)\033[1;33m
