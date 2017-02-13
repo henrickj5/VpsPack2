@@ -31,7 +31,7 @@ else
 				then
 					service ssh restart				
 else
-					/etc/init.d/squid restart				
+					/etc/init.d/ssh restart				
 fi	
 				tput setaf 7 ; tput setab 1 ; tput bold ; echo "" ; echo "O Proxy Squid3 foi recarregado com sucesso!" ; echo "" ; tput sgr0
 				exit 1
