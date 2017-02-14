@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+echo "limpando proxy......"
+iptables -t nat -F
+iptables -t nat -A POSTROUTING -o wlan0 -j MASQUERADE
+rm -rf /squid/var/cache/*
+/usr/local/squid/sbin/squid -z
+/usr/local/squid/sbin/squid -NCd1
+/usr/local/squid/sbin/squid
+iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 3128
+echo "                  "
+echo " Proxy limpo e reativado...."
