@@ -24,9 +24,10 @@ read inut
 make install
 clear
 echo -e "\033[1;31m Compilação terminada"
-echo -e "\033[1;31m "Recomeno desistalar o squid3 ? [S] ou [N]\033[0m:"
-["Squid3"="S"]
-echo -e "\033[1;31m "apt-get remove squid3\033[0m"
+echo -e "Recomeno desistalar o squid3 ? [S] ou [N]?:"
+["$Squid3"="S"]
+then
+echo -e "apt-get remove squid3"
 echo -e "\033[1;37m Configurando /usr/etc/squid.conf\033[0m"
 echo "cache_effective_user squid
 cache_access_log /usr/var/logs/access.log
