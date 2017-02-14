@@ -1,14 +1,4 @@
-<?php 
-/** 
-* Magento Maintenance Script 
-* 
-* @version 3.0.1 
-* @author DDR Host Hospedagem de Sites <suporte@ddrhost.com.br> 
-* @copyright Copyright (c) 2010-2015 DDR Host. Todos os direitos reservados. 
-* @link https://www.ddrhost.com.br 
-*/ 
-
-switch($_GET['clean']) { 
+diswitch($_GET['clean']) { 
 case 'log': 
 clean_log_tables(); 
 break; 
