@@ -1,16 +1,12 @@
 #!/bin/bash
-# Script para limpeza do cache do Squid
-# Por Marcelo Leães - marcelo@eth1.com.br
-
-echo -e "--------------------------------------------------------------" >> /var/log/squid/cleaner.log
-echo -e "Parando Squid - `date "+%d-%m-%Y"`" >> /var/log/squid/cleaner.log
+echo -n "Parando squid."
 /etc/init.d/squid stop
 cd /var/spool/squid/
-echo -e "Limpando Squid - `date "+%d-%m-%Y"`" >> /var/log/squid/cleaner.log
-rm -rf *
-echo -e "Reconstruindo Squid - `date "+%d-%m-%Y"`" >> /var/log/squid/cleaner.log
-squid -z
-echo -e "Iniciando Squid - `date "+%d-%m-%Y"`" >> /var/log/squid/cleaner.log
+echo -n "Limpando squid."
+rm -Rfv *
+echo -n "Excluindo arquivos..."
+echo -n "Reconstruindo estrutura do cache."
+/usr/sbin/squid -z
+echo -n "Ativando squid"
 /etc/init.d/squid start
-echo -e "--------------------------------------------------------------" >> /var/log/squid/cleaner.log
-exit 0
+/usr/sbin/squid -k reconfigure
