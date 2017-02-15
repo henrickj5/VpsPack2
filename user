@@ -21,7 +21,7 @@ cyann="\033[2;36m"
 branco="\033[1;37m"
 cyann="\033[2;36m"
 # BY: Glemysson
-echo -e "$branco"
+echo -e "$azul"
 read -p "Qual nome? : " nome
 read -p "Qual senha? : " senha
 read -p "Dias para expirar: " dias
@@ -35,10 +35,10 @@ sudo useradd -M -s /bin/false $nome -e $validade 1>/dev/null 2>/dev/null
 
 echo -e ""$verde"Conta Criada com Sucesso"
 echo " "
-echo -e ""$amarelo"IP:"$branco" $IP"
+echo -e ""$azul"IP:"$azul" $IP"
 echo -e ""$amarelo"Portas SSH:"$branco" 443 e 22"
-echo -e ""$amarelo"Login:"$branco" $nome"
+echo -e ""$azul"Login:"$azul" $nome"
 echo -e ""$amarelo"Senha:"$branco" $senha"
-echo -e ""$amarelo"Proxy:"$branco" $IP"
+echo -e ""$amarelo"Proxy:"$azul" $IP"
 echo -e ""$amarelo"Portas:"$branco" 8080 80 8799 e 3128"
-echo -e ""$amarelo"Validade:"$branco" $validadebr"
+echo -e ""$azul"Validade:"$branco" $validadebr"
