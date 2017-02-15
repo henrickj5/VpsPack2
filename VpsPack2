@@ -46,8 +46,8 @@ echo -e "\033[1;37mEscolha uma das opçoẽs:    \033[1;37mPara Sair Ctrl + C\03
 [2] criarusuario \033[1;30m(Criar usuarios)\033[2;36m
 [3] redefinirusuario \033[1;30m(Opções para mudanças no usuario)\033[2;36m
 [4] userback \033[1;30m(Deletar, Desconectar, Opções)\033[2;36m
-[5] bloquearfirewall \033[1;30m(Regras iptables block torrent, icmp [RISCOS])033[2;36m
-[6] resertafirewall \033[1;30m(Retira todas as regras iptables [RISCOS])
+[5] bloquearfirewall \033[1;30m(Regras iptables block torrent, icmp [RISCOS])\033[2;36m
+[6] resertafirewall \033[1;30m(Retira todas as regras iptables [RISCOS])\033[2;36m
 [7] instalar-addhost \033[1;30m(Faz a preparaçao para add-host)\033[2;36m
 [8] addhost \033[1;30m(Adicionar hosts aceitos pelo squid )\033[2;36m
 [9] sshmonitor \033[1;30m(IMPORTANTE monitorar conexões por usuarios)\033[2;36m
