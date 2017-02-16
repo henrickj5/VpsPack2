@@ -40,7 +40,7 @@ mkdir /etc/VpsPack2dir/limite
 fi
 
 clear
-echo -e "\033[2;36m VpsPack2\033[0;92m  2.0 [rick (@RickUX)]\033[0m"
+echo -e "\033[0;36m VpsPack2\033[0;92m  2.0 [rick (@RickUX)]\033[0m"
 echo -e "\033[0;92mEscolha uma das opçoẽs:  \033[2;36mPara Sair Ctrl + C\033[2;36m
 [1] limit \033[1;30m(limite de conexoes simultaneas)\033[2;36m
 [2] criarusuario \033[1;30m(Criar usuarios)\033[2;36m
