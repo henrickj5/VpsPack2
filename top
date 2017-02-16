@@ -1,9 +1,10 @@
-#!/bin/bash
-
-CPU_USAGE=$(top -b -n2 -p 1 | fgrep "Cpu(s)" | tail -1 | awk -F'id,' -v prefix="$prefix" '{ split($1, vs, ","); v=vs[length(vs)]; sub("%", "", v); printf "%s%.1f%%\n", prefix, 100 - v }')
-
-DATE=$(date "+%Y-%m-%d %H:%M:")
-
-CPU_USAGE="$DATE CPU: $CPU_USAGE"
-
-echo $CPU_USAGE >> /opt/cpu_usage.out
+sar -u 1 | awk '{ if (int($9)==0) { 
+                 i=i+1; {
+                           print i, $9
+                         }
+                  }
+       if (int($9)>=0) {
+                  i=0
+               }
+               if (i>=10) print "sending email"
+            }'
