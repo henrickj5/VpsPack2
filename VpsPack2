@@ -41,7 +41,7 @@ fi
 
 clear
 echo -e " \033[1;35m  VpsPack2  2.0  [rick (@RickUX)]\033[0m"
-echo -e "\033[1;35mEscolha uma das opçoẽs:    \\033[1;35mPara Sair Ctrl + C\033[2;36m
+echo -e "\033[0;32mEscolha uma das opçoẽs:    \\033[1;35mPara Sair Ctrl + C\033[2;36m
 [1] limit \033[1;30m(limite de conexoes simultaneas)\033[1;36m
 [2] criarusuario \033[1;30m(Criar usuarios)\033[2;36m
 [3] redefinirusuario \033[1;30m(Opções para mudanças no usuario)\033[1;35m
