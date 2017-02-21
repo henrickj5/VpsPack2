@@ -21,7 +21,7 @@ fi
 
 cat -n /etc/issue |grep 1 |cut -d' ' -f6,7,8 |sed 's/1//' |sed 's/	//' > /etc/so 
 echo -e "\033[1;31mPara a instalação ser correta é preciso o ip.
-Digite o ip !\033[0m"
+Digite o ip !\033[2;36m"
 read -p ": " ip
 clear
 echo -e "\033[1;31m-----> \033[01;37mScript Rogerinhoj5 (InSonia)\033[0m"
