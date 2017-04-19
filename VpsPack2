@@ -70,7 +70,7 @@ case $opcao in
   16)
    removerhost;;
   17)
-   monitorar;;
+   sshmonitor;;
   18)
    backup_de_usuarios;;
   19)
