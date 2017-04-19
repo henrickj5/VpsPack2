@@ -1,49 +1,11 @@
 #!/bin/bash
 
-if [ $(id -u) -eq 0 ]
-then
-	clear
-else
-	if echo $(id) |grep sudo > /dev/null
-	then
-	clear
-	echo "Voce não é root"
-	echo "Seu usuario esta no grupo sudo"
-	echo -e "Para virar root execute \033[1;31msudo su\033[0m"
-	exit
-	else
-	clear
-	echo -e "Vc nao esta como usuario root, nem com seus direitos (sudo)\nPara virar root execute \033[1;31msu\033[0m e digite sua senha root"
-	exit
-	fi
-fi
-
-if [ -d /etc/VpsPack2dir ]
-then
-echo ""
-else
-mkdir /etc/VpsPack2dir
-fi
-
-if [ -d /etc/VpsPackdir/senha ]
-then
-echo ""
-else
-mkdir /etc/VpsPack2dir/senha
-fi
-
-if [ -d /etc/VpsPack2dir/limite ]
-then
-echo ""
-else
-mkdir /etc/VpsPack2dir/limite
-fi
-
 clear
-echo -e " \033[0;92m      VpsPack2-2.0\033[1;37m [rick (@RickUX)] 
-Vantagens adicionadas ao script \033[0;92m @InSONIA_3d (☆Henrick☆) \033[0m"
-echo -e "\033[1;37mEscolha uma das opçoẽs:    \033[1;37mPara Sair Ctrl + C\033[1;33m
-\033[2;36m[\033[1;30m01\033[1;33m] Configurar_Squid_SSH \033[1;30m(Squid e openssh configuração)\033[1;33m
+if [[ $1 == "" ]]
+then
+echo -e "\033[1;37m       VpsPack V2 © RicKUX \033[0m"
+echo -e "\033[1;37mEscolha uma opção:    Para Sair Ctrl + C\033[1;33m
+[\033[1;30m01\033[1;33m] Configurar_Squid_SSH \033[1;30m(Squid e openssh configuração)\033[1;33m
 [\033[1;30m02\033[1;33m] Limite \033[1;30m(limite de conexoes simultaneas)\033[1;33m
 [\033[1;30m03\033[1;33m] Criar_Usuario \033[1;30m(Criar usuarios)\033[1;33m
 [\033[1;30m04\033[1;33m] Remover_expirados \033[1;30m(Remover usuarios ja expirados)\033[1;33m
@@ -59,7 +21,7 @@ echo -e "\033[1;37mEscolha uma das opçoẽs:    \033[1;37mPara Sair Ctrl + C\03
 [\033[1;30m14\033[1;33m] Reset_Firewall \033[1;30m(Resetar regras iptables [\033[1;31mRISCOS\033[1;30m])\033[1;33m
 [\033[1;30m15\033[1;33m] Addhost \033[1;30m(Adicionar Hosts aceitos pelo squid )\033[1;33m
 [\033[1;30m16\033[1;33m] Remover_Host \033[1;30m(Remover Hosts aceitos pelo squid)\033[1;33m
-[\033[1;30m17\033[1;33m] sshmonitor \033[1;30m(Monitorar conexões atuais)\033[0m\033[1;33m
+[\033[1;30m17\033[1;33m] Monitorar \033[1;30m(Monitorar conexões atuais)\033[0m\033[1;33m
 [\033[1;30m18\033[1;33m] Backup-Users \033[1;30m(Backup dos usuarios)\033[1;33m
 [\033[1;30m19\033[1;33m] Rest-Users \033[1;30m(Restaurar usuarios feito backup)\033[1;33m
 [\033[1;30m20\033[1;33m] Usuarios_Detalhes \033[1;30m(Informacoes sobre os usuarios !!)\033[1;33m
@@ -69,7 +31,9 @@ echo -e "\033[1;37mEscolha uma das opçoẽs:    \033[1;37mPara Sair Ctrl + C\03
 [\033[1;30m24\033[1;33m] Deletar_Todos \033[1;30m(Todos os usuarios serão deletados)\033[1;33m
 [\033[1;30m25\033[1;33m] Desinstalar \033[1;30m(Remover VpsPack)\033[0m"
 read -p ": " opcao
+else
 opcao=$1
+fi
 case $opcao in
   1 | 01 )
    configurarsquid;;
@@ -106,7 +70,7 @@ case $opcao in
   16)
    removerhost;;
   17)
-   sshmonitor;;
+   monitorar;;
   18)
    backup_de_usuarios;;
   19)
