@@ -59,7 +59,7 @@ echo -e "\033[1;37mEscolha uma das opçoẽs:    \033[1;37mPara Sair Ctrl + C\03
 [\033[1;30m14\033[1;33m] Reset_Firewall \033[1;30m(Resetar regras iptables [\033[1;31mRISCOS\033[1;30m])\033[1;33m
 [\033[1;30m15\033[1;33m] Addhost \033[1;30m(Adicionar Hosts aceitos pelo squid )\033[1;33m
 [\033[1;30m16\033[1;33m] Remover_Host \033[1;30m(Remover Hosts aceitos pelo squid)\033[1;33m
-[\033[1;30m17\033[1;33m] Monitorar \033[1;30m(Monitorar conexões atuais)\033[0m\033[1;33m
+[\033[1;30m17\033[1;33m] sshmonitor \033[1;30m(Monitorar conexões atuais)\033[0m\033[1;33m
 [\033[1;30m18\033[1;33m] Backup-Users \033[1;30m(Backup dos usuarios)\033[1;33m
 [\033[1;30m19\033[1;33m] Rest-Users \033[1;30m(Restaurar usuarios feito backup)\033[1;33m
 [\033[1;30m20\033[1;33m] Usuarios_Detalhes \033[1;30m(Informacoes sobre os usuarios !!)\033[1;33m
@@ -108,7 +108,7 @@ case $opcao in
   16)
    removerhost;;
   17)
-   monitorar;;
+   sshmonitor;;
   18)
    backup_de_usuarios;;
   19)
