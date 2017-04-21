@@ -42,7 +42,7 @@ case $opcao in
    read -p "Limite: " limite
    limite $user $limite;;
   3 | 03 )
-   criarusuario;;
+   criaruser;
   4 | 04 )
    removerexpirados;;
   5 | 05 )
