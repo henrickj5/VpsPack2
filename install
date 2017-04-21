@@ -26,7 +26,7 @@ yum -y update
 yum -y install git
 git clone https://github.com/henrickj5/VpsPack2.git
 clear
-cd henrick
+cd VpsPack2
 rm -rf README.md
 rm -rf install
 for arqs in `ls`
@@ -45,7 +45,7 @@ apt-get update
 apt-get install -y git
 git clone https://github.com/henrickj5/VpsPack2.git
 clear
-cd henrickj
+cd VpsPack2
 rm -rf README.md
 rm -rf install
 for arqs in `ls`
